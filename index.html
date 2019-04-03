@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-  <!-- this wouldn't have been possible without https://soundcloud.com/eightmedia/hammerhammerhammer -->
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="manifest" href="/manifest.json" />
   <title>Non Stop Hammer Ti.me</title>
   <style type="text/css">
     * {
@@ -70,6 +68,14 @@
   </main>
 
   <script type="text/javascript">
+    /* Service worker */
+    if('serviceWorker' in navigator){
+      if(!navigator.serviceWorker.controller){
+        navigator.serviceWorker.register('/sw.js', { scope: './' });
+      }
+    }
+    
+    /* Audio-link handling and progress bar */
     const audio = document.createElement('audio');
     audio.loop = true;
     const progressCircle = document.getElementById('hammer-bg-circ');
@@ -78,6 +84,8 @@
       const progress = (audio.currentTime / audio.duration);
       progressCircle.style['stroke-dasharray'] = `${progress * 943}, 943`;
     }
+
+    /* Click handling */
     document.addEventListener('click', function(e){
       e.preventDefault();
       e.stopPropagation();

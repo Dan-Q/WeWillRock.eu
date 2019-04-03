@@ -1,0 +1,16 @@
+{
+  "name" : "Non Stop Hammer Time",
+  "short_name" : "Hammer Time!",
+  "description" : "You can't touch this!",
+  "start_url" : "https://nonstophammerti.me/",
+  "display" : "fullscreen",
+  "orientation" : "any",
+  "lang" : "English",
+  "icons" : [
+    {
+      "src": "/hammer-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
