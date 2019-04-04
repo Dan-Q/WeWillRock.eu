@@ -22,9 +22,23 @@
       justify-content: center;
       align-items: center;
     }
+    a {
+      border-radius: 50%;
+      padding: 0.35vw;
+    }
+    a:focus {
+      border: 4px dotted #ffffff4d;
+      outline: 0;
+    }
     svg {
       width: 33vw;
       height: 33vw;
+    }
+    .sr-only {
+      overflow: hidden;
+      position: absolute;
+      height: 1px;
+      width: 1px;
     }
     .beat {
       animation: beat 0.9s infinite -0.3s; /* 0.9s = every other beat at 133bpm */
@@ -63,7 +77,9 @@
           </g>
         </g>
       </svg>
-
+      <span class="sr-only">
+        Play music
+      </span>
     </a>
   </main>
 
@@ -79,7 +95,6 @@
     const audio = document.createElement('audio');
     audio.loop = true;
     const progressCircle = document.getElementById('hammer-bg-circ');
-    const svg = document.querySelector('svg');
     audio.ontimeupdate = function(){
       const progress = (audio.currentTime / audio.duration);
       progressCircle.style['stroke-dasharray'] = `${progress * 943}, 943`;
@@ -94,10 +109,10 @@
       if(!a.matches('[href$=".mp3"]')) return;
       if(audio.paused){
         audio.src = a.href; audio.play();
-        svg.classList.add('beat');
+        a.classList.add('beat');
       } else {
         audio.pause();
-        svg.classList.remove('beat');
+        a.classList.remove('beat');
       }
       audio.currentTime = 0;
     });
