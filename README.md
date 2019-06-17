@@ -1,7 +1,5 @@
-# NonStopHammerTi.me
+# WeWillRock.EU
 
-See this live: https://nonstophammerti.me/
+See this live: https://wewillrock.eu/
 
-Explanatory (?) blog post: https://danq.me/2019/04/03/nonstophammertime/
-
-Uses music from https://soundcloud.com/eightmedia/hammerhammerhammer under a Creative Commons (attribution) license. Thanks eightmedia!
+Brought to you by the idiot behind https://nonstophammerti.me/

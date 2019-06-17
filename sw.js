@@ -1,7 +1,7 @@
 const CACHE = "cant-touch-this";
 const precacheFiles = [
   'index.html',
-  'hammer.mp3'
+  'rock.mp3'
 ];
 
 self.addEventListener("install", function(event) {

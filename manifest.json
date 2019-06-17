@@ -1,8 +1,8 @@
 {
-  "name" : "Non Stop Hammer Time",
-  "short_name" : "Hammer Time!",
-  "description" : "You can't touch this!",
-  "start_url" : "https://nonstophammerti.me/",
+  "name" : "We Will Rock . EU",
+  "short_name" : "Rock . EU",
+  "description" : "By order of the Queen.",
+  "start_url" : "https://wewillrock.eu/",
   "display" : "fullscreen",
   "orientation" : "any",
   "lang" : "English",

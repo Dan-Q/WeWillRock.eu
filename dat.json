@@ -1,19 +1,19 @@
 {
   "name": "Non Stop Hammer Ti.me",
-  "url": "/dat://0a4a8a187dfa25794db7eb08f5c3694f1c07ff07ee6a4c50e6d7fe488e6b0a0",
-  "title": "Non Stop Hammer Ti.me",
-  "description": "You can't touch this!",
+  "url": "dat://ff2893229abc0cdc3a10cdba477d551e446269471b37738963c94cdad923b94f",
+  "title": "We Will Rock . EU",
+  "description": "By order of the Queen.",
   "author": {
-    "name": "Dan Q",
-    "email": "hammertime@danq.me",
-    "web": "https://danq.me/"
-  },
-  "links": {
-    "license": [
-      {
-        "href": "https://www.gnu.org/licenses/gpl-3.0.en.html",
-        "title": "GPLv3"
-      }
-    ]
+      "name": "Dan Q",
+      "email": "wewillrock.eu@danq.me",
+      "web": "https://danq.me/"
+    },
+    "links": {
+      "license": [
+        {
+          "href": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+          "title": "GPLv3"
+        }
+      ]
   }
 }
