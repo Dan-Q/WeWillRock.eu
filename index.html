@@ -22,11 +22,11 @@
       justify-content: center;
       align-items: center;
     }
-    a {
+    main a {
       border-radius: 50%;
       padding: 0.35vw;
     }
-    a:focus {
+    main a:focus {
       border: 4px dotted #ffffff4d;
       outline: 0;
     }
@@ -55,6 +55,19 @@
        75% { transform: scale(1.1); }
        80% { transform: scale(1); }
       100% { transform: scale(1); }
+    }
+    footer {
+      position: absolute;
+      bottom: 5px;
+      width: auto;
+      background: #fffc;
+      color: black;
+      right: 5px;
+      padding: 4px 8px;
+      border-radius: 12px;
+    }
+    footer a {
+      color: #039;
     }
   </style>
 </head>
@@ -88,6 +101,10 @@
     </a>
   </main>
 
+  <footer>
+    a <a href="https://things.danq.me/">Dan Q thing</a>
+  </footer>
+
   <script type="text/javascript">
     /* Service worker */
     if('serviceWorker' in navigator){
@@ -107,11 +124,11 @@
 
     /* Click handling */
     document.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
       const a = e.target.closest('a');
       if(!a) return;
       if(!a.matches('[href$=".mp3"]')) return;
+      e.preventDefault();
+      e.stopPropagation();
       if(audio.paused){
         audio.src = a.href; audio.play();
         a.classList.add('beat');
